@@ -1,0 +1,166 @@
+*{
+        font-family: 'Press Start 2P', cursive;
+}
+#left{
+        width:50%;
+        float:left;
+        min-height:100%;
+        background-color:#97fd6f;
+}
+#right{
+        width:50%;
+        float:left;
+        min-height:100%;
+        background-color:#fff45c;
+}
+
+.content{
+        text-align:center;
+        padding:0;
+        position:relative;
+}
+#keypad{
+        height:84px;
+        padding:0;
+        background-color:white;
+        border:0;
+}
+#status{
+        height:50px;
+        padding:0px;
+        background:black;
+        color:white;
+}
+#energy{
+	height:100%;
+	width:50%;
+	float:left;
+}
+#score{
+	height:100%;
+	width:50%;
+	float:left;
+}
+#btn_left{
+        margin:0;
+        float:left;
+}
+#btn_right{
+        margin:0;
+        float:right;
+}
+input{
+        margin:0;
+        padding:0;
+}
+#main_content{
+        color:white;
+        background-color:#97fd6f;
+}
+
+.inner_con{
+        margin:auto;
+        width:80%;
+        height:99%;
+}
+.titleBox{
+	width:100%;
+	height: 10%;
+	position: relative;
+	padding-top:5em;
+	padding-bottom:3em;
+
+}
+.titleBox h1{
+	font-size: 4.5em;
+}
+.titleBox h2{
+	font-size: 2.5em;
+}
+.btn{
+	width:100%;
+	height:30%;
+}
+#gameover_content{
+        background-color:#ff3354;
+}
+
+.ui-btn-inner .ui-btn-text {
+        color:black;
+}
+.character{
+        background: url(images/main_char.png) no-repeat;
+        background-size:contain;
+        background-position: center center;
+        height:40%;
+        width:100%;
+}
+#start{
+	opacity:0.5;
+	background-color:black;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.font1{
+	color:white;
+	position:relative;
+	top: 49%; 
+	font-size:16px;
+}
+.title{
+	position:absolute;
+        bottom:0;
+        right:0;
+        left:0;
+        margin:auto;
+}
+/* thyou */
+#score_header {
+	background-image: none;
+	background-color:#fff45c;
+	padding-top:20px;
+	height:40px;
+	text-align: center;
+}
+#score_title{
+	margin:auto;
+	font-size: x-large;
+	color:black;
+}
+#scoreboard{
+	background-color:#fff45c;
+	margin:auto;
+}
+#score_board {
+	background-image: none;
+	background-color:#fff45c;
+	padding:0;
+	margin:0;
+}
+#score_footer {
+	background-image: none;
+        background-color:#fff45c;
+	height: 25px;
+	margin:0;
+	border:0;
+	}
+#score_table{
+	background-color: #fffcd3;
+        text-align:center;
+        vertical-align:center;
+	margin:auto;
+	border: 0;
+	border-radius:10px;
+}
+#score_table td{
+	padding:2px 20px;
+}
+
+li {
+	margin:0;
+	border:2px dotted #000000;
+	text-align: center;
+	padding:0;
+}
