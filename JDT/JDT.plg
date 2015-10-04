@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: JDT - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Hoon\LOCALS~1\Temp\RSP1337.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/JDT.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Hoon\πŸ≈¡ »≠∏È\JDT(T)_7.3.19.22\tet.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Hoon\LOCALS~1\Temp\RSP1337.tmp" 
+Creating temporary file "C:\DOCUME~1\Hoon\LOCALS~1\Temp\RSP1336.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/JDT.pdb" /debug /machine:I386 /out:"Debug/JDT.exe" /pdbtype:sept 
+".\Debug\Function.obj"
+".\Debug\jawon.obj"
+".\Debug\long_kor.obj"
+".\Debug\main.obj"
+".\Debug\sansongbi.obj"
+".\Debug\short_kor.obj"
+".\Debug\tet.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Hoon\LOCALS~1\Temp\RSP1336.tmp"
+<h3>Output Window</h3>
+Compiling...
+tet.c
+Linking...
+
+
+
+<h3>Results</h3>
+JDT.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

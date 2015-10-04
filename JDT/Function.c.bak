@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+#include <windows.h>
+#include "conio.h"
+#include "cmd.h"
+
+void gotoxy(int x, int y)
+{
+	COORD co;
+	co.X = x;
+	co.Y = y;
+
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), co);
+}
+
+void textcolor(unsigned int text, unsigned int back)
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), text | back);
+}
+
+int Func_line (char *file)
+{
+	int line=0;
+	char str[50];
+	
+	FILE* fp=fopen(file,"rb");
+
+	while(fgets(str,sizeof(str),fp)!=NULL)
+		line++;
+	
+	fclose(fp);
+
+	return line;
+}
+
+void Func_table(void)
+{
+    int i;
+    int x=20,y=2;
+    
+    char *table[]={
+         "忙式式式式式式式式式式式式式式式式式式忖","弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛","弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛",
+         "弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛","弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛","弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛",
+         "弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛","弛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛弛","戌式式式式式式式式式式式式式式式式式式戎"};
+    system("cls");
+    for(i=0;i<9;i++){
+    	gotoxy(x,y+i);
+    	printf("%s",table[i]);
+    }
+}
+
+void noCursor(void) //醴憮蒂 橈撻棻.
+{
+ CONSOLE_CURSOR_INFO CurInfo;
+ CurInfo.dwSize=1;
+ CurInfo.bVisible=FALSE;
+ SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE),&CurInfo);
+}
